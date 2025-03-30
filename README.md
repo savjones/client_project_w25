@@ -18,7 +18,7 @@ Interactive FAQ Section: The homepage includes a toggleable FAQ section to impro
 
 Setup and Usage:
 
-Clone the Repository: Use the following command in your terminal: git clone <repository_url>
+Clone the Repository: Use the following command in your terminal: git clone https://github.com/savjones/client_project_w25.git
 
 Open the Project: Open the project in your preferred code editor to review and modify the files.
 
