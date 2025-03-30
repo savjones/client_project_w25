@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Success Portal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Success Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <a href="#main-content">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page_1.html">Food Pantry</a></li>
-                <li><a href="page_2.html">CAPS</a></li>
-                <li><a href="page_3.html">Study Spaces</a></li>
-            </ul>
-        </nav>
-        <h1>Student Success Portal</h1>
-    </header>
-    <main id="main-content">
-        <section>
-            <h2>Welcome to the Student Success Portal</h2>
-            <img src="images/MCOMMONS_life.jpg" alt="Welcome image">
-            <p>Your guide to academic, mental health, and life balance resources.</p>
-            <ul>
-                <li>Food Pantry</li>
-                <li>Counseling and Psychological Services (CAPS)</li>
-                <li>Study Spaces on Campus</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 UMSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Support Resources</a></p>
-    </footer>
+  <!-- Skip link placed before header content -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+  
+  <header>
+    <div class="header-container">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page_1.html">Food Pantry</a></li>
+          <li><a href="page_2.html">CAPS</a></li>
+          <li><a href="page_3.html">Study Spaces</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Student Success Portal</h1>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>Welcome to the Student Success Portal</h2>
+      <img src="images/MCOMMONS_life.jpg" alt="Welcome image" />
+      <p>Your guide to academic, mental health, and life balance resources.</p>
+      <ul>
+        <li>Food Pantry</li>
+        <li>Counseling and Psychological Services (CAPS)</li>
+        <li>Study Spaces on Campus</li>
+      </ul>
+    </section>
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <button class="faq-toggle" aria-expanded="false" aria-controls="faq-content">
+        Show FAQs
+      </button>
+      <div id="faq-content" class="faq-content" hidden>
+        <p>
+          <strong>Q:</strong> What resources are available?<br />
+          <strong>A:</strong> We offer food pantries, counseling, and study spaces.
+        </p>
+        <p>
+          <strong>Q:</strong> Who can access these services?<br />
+          <strong>A:</strong> All UMSI students.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentYear"></span> UMSI Academic Advising | 
+      <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Support Resources</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
